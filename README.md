@@ -43,10 +43,10 @@ Below are two screenshots of the project's UI design:
 
 # Screen Shots
 
-![alt text](https://github.com/ismailelmogy/quotes/blob/main/layout/random%20quote.png "Random Quote")
+ 
 --------------------------------------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------------------------------------
-![alt text](https://github.com/ismailelmogy/quotes/blob/main/layout/Error.png "Error")
+ 
 --------------------------------------------------------------------------------------------------------------------------------
 ## Features
 
