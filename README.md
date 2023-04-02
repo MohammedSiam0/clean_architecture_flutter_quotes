@@ -57,7 +57,7 @@ title="Optional title"
 style="max-width: 10px; margin-right: 10px; hight: 10px">
 --------------------------------------------------------------------------------------------------------------------------------
 
-<div style="display: flex;">
+<div style="display: block;">
 
 <img
 src="layout/Home Qoute.jpeg"
@@ -65,12 +65,13 @@ alt="Alt text"
 title="Optional title"
 style="max-width: 10px; margin-right: 10px; hight: 10px">
 <img
-src="layout/Home Qoute En.jpeg"
+src="layout/Home Screen En.jpeg"
 alt="Alt text"
 title="Optional title"
 style="max-width: 10px; margin-right: 10px; hight: 10px">
 
 </div>
+
 
 --------------------------------------------------------------------------------------------------------------------------------
 ## Features
