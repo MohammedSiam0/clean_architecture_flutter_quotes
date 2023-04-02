@@ -10,10 +10,11 @@ The objective of this tutorial is to learn about Clean Architecture for Flutter.
 Below are two screenshots of the project's UI design:
 <div style="display: flex;">
   <img
-     src="images/CleanArchitecture.jpg"
+     src="layout/CleanArchitecture.jpg"
      alt="Alt text"
      title="Optional title"
      style="max-width: 10px; margin-right: 10px; hight: 10px">
+ 
  
 </div>
 
@@ -21,7 +22,7 @@ Below are two screenshots of the project's UI design:
 ## Reso Coder's Flutter Clean Architecture Proposal
 <div style="display: flex;">
   <img
-     src="images/Clean-Architecture-Flutter-Diagram.webp"
+     src="layout/Clean-Architecture-Flutter-Diagram.webp"
      alt="Alt text"
      title="Optional title"
      style="max-width: 10px; margin-right: 10px; hight: 10px">
@@ -33,7 +34,7 @@ Below are two screenshots of the project's UI design:
 
 <div style="display: flex;">
   <img
-     src="images/project structure.png"
+     src="layout/project structure.png"
      alt="Alt text"
      title="Optional title"
      style="max-width: 10px; margin-right: 10px; hight: 10px">
@@ -43,10 +44,34 @@ Below are two screenshots of the project's UI design:
 
 # Screen Shots
 
- 
+<img
+src="layout/Splash Screen.jpeg"
+alt="Alt text"
+title="Optional title"
+style="max-width: 10px; margin-right: 10px; hight: 10px">
 --------------------------------------------------------------------------------------------------------------------------------
+<img
+src="layout/Loading Data.jpeg"
+alt="Alt text"
+title="Optional title"
+style="max-width: 10px; margin-right: 10px; hight: 10px">
 --------------------------------------------------------------------------------------------------------------------------------
- 
+
+<div style="display: flex;">
+
+<img
+src="layout/Home Qoute.jpeg"
+alt="Alt text"
+title="Optional title"
+style="max-width: 10px; margin-right: 10px; hight: 10px">
+<img
+src="layout/Home Qoute En.jpeg"
+alt="Alt text"
+title="Optional title"
+style="max-width: 10px; margin-right: 10px; hight: 10px">
+
+</div>
+
 --------------------------------------------------------------------------------------------------------------------------------
 ## Features
 
@@ -58,6 +83,13 @@ Below are two screenshots of the project's UI design:
 This project has used the following Flutter libraries:
 
 - **flutter_screenutil: ^5.5.3+2:** This library is used for scaling the UI components according to the device's screen size and resolution.
+- **dartz: ^0.10.1 :**  
+- ** dio: ^5.0.3:**  
+- ** flutter_spinkit: ^5.1.0 :**   
+- ** internet_connection_checker: ^1.0.0+1:**   
+- ** equatable: ^2.0.5 :**   
+- ** shared_preferences: ^2.0.20:**   
+- ** get_it: ^7.2.0:**   
  
 ## How to Run the Project
 
@@ -69,10 +101,9 @@ To run this project on your local machine, follow these steps:
 
 ## Technologies Used
 
-- Flutter : Dart
-- Api 
-- Local Database
-- FireBase or FireStore
+- Flutter - Dart
+- Api
+- Local Database - SharedPreference
 
 ## Credits
 

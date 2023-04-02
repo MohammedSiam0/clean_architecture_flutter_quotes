@@ -16,12 +16,12 @@ class RandomQuoteLocalDataSourceImpl implements RandomQuoteLocalDataSource {
   RandomQuoteLocalDataSourceImpl({required this.sharedPreferences});
 
   @override
-  Future<QuoteModel> getLastRandomQuote() {  // last in shared pref
-   
-    final jsonString = sharedPreferences.getString(AppStrings.cachedRandomQuote); //Get in Shared Pref
+  Future<QuoteModel> getLastRandomQuote() {
+    final jsonString =
+        sharedPreferences.getString(AppStrings.cachedRandomQuote);
     if (jsonString != null) {
       final cacheRandomQuote =
-       Future.value(QuoteModel.fromJson(json.decode(jsonString)));
+          Future.value(QuoteModel.fromJson(json.decode(jsonString)));
       return cacheRandomQuote;
     } else {
       throw CacheException();
@@ -29,7 +29,7 @@ class RandomQuoteLocalDataSourceImpl implements RandomQuoteLocalDataSource {
   }
 
   @override
-  Future<void> cacheQuote(QuoteModel quote) {  // save in shared pref
+  Future<void> cacheQuote(QuoteModel quote) {
     return sharedPreferences.setString(
         AppStrings.cachedRandomQuote, json.encode(quote));
   }

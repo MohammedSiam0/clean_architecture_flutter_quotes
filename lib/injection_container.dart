@@ -6,6 +6,12 @@ import 'package:clean_architecture_flutter/features/random_quote/data/repositori
 import 'package:clean_architecture_flutter/features/random_quote/domain/repositories/quote_repository.dart';
 import 'package:clean_architecture_flutter/features/random_quote/domain/usecases/get_rendom_quote.dart';
 import 'package:clean_architecture_flutter/features/random_quote/presentation/cubit/random_quote_cubit.dart';
+import 'package:clean_architecture_flutter/features/splash/data/datasources/lang_local_data_sources.dart';
+import 'package:clean_architecture_flutter/features/splash/data/repositories/lang_repository_impl.dart';
+import 'package:clean_architecture_flutter/features/splash/domain/repositories/lang_repository.dart';
+import 'package:clean_architecture_flutter/features/splash/domain/usecases/change_locale.dart';
+import 'package:clean_architecture_flutter/features/splash/domain/usecases/get_save_lang.dart';
+import 'package:clean_architecture_flutter/features/splash/presentation/cubit/locale_cubit.dart';
 import 'package:dio/dio.dart';
 import 'package:get_it/get_it.dart';
 import 'package:internet_connection_checker/internet_connection_checker.dart';
@@ -22,9 +28,16 @@ Future<void> init() async {
   // Blocs
   sl.registerFactory<RandomQuoteCubit>(
       () => RandomQuoteCubit(getRandomQuoteUseCase: sl()));
+  sl.registerFactory<LocaleCubit>(
+      () => LocaleCubit(getSavedLangUseCase: sl(), changeLocaleCase: sl()));
 
   // Use Cases
-  sl.registerLazySingleton(() => GetRandomQuote(quoteRepository: sl()));
+  sl.registerLazySingleton<GetRandomQuote>(
+      () => GetRandomQuote(quoteRepository: sl()));
+  sl.registerLazySingleton<GetSavedLangUseCase>(
+      () => GetSavedLangUseCase(langRepository: sl()));
+  sl.registerLazySingleton<ChangeLangCase>(
+      () => ChangeLangCase(langRepository: sl()));
 
   // Repository
   GetIt.instance.registerLazySingleton<QuoteRepository>(() =>
@@ -32,6 +45,8 @@ Future<void> init() async {
           networkInfo: sl(),
           randomQuoteRemoteDataSource: sl(),
           randomQuoteLocalDataSource: sl()));
+  GetIt.instance.registerLazySingleton<LangRepository>(
+      () => LangRepositoryImpl(langLocaleDataSources: sl()));
 
   // Data Sources
   sl.registerLazySingleton<RandomQuoteLocalDataSource>(
@@ -39,6 +54,8 @@ Future<void> init() async {
 
   sl.registerLazySingleton<RandomQuoteRemoteDataSource>(
       () => RandomQuoteRemoteDataSourceImpl(apiConsumer: sl()));
+  sl.registerLazySingleton<LangLocaleDataSources>(
+      () => LangLocaleDataSourcesImpl(sharedPreferences: sl()));
 
   //! Core
   GetIt.instance.registerLazySingleton<NetworkInfo>(

@@ -1,3 +1,5 @@
+import 'package:clean_architecture_flutter/config/locale/app_localizations.dart';
+import 'package:clean_architecture_flutter/features/splash/presentation/cubit/locale_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
@@ -80,14 +82,15 @@ class _QuoteScreenState extends State<QuoteScreen> {
           color: AppColors.primary,
         ),
         onPressed: () {
-          // if (AppLocalizations.of(context)!.isEnLocale) {
-          //   BlocProvider.of<LocaleCubit>(context).toArabic();
-          // } else {
-          //   BlocProvider.of<LocaleCubit>(context).toEnglish();
-          // }
+          if (AppLocalizations.of(context)!.isEnLocale) {
+            BlocProvider.of<LocaleCubit>(context).toArabic();
+          } else {
+            BlocProvider.of<LocaleCubit>(context).toEnglish();
+          }
         },
       ),
-      title: const Text(AppStrings.appName),
+      // title: const Text(AppStrings.appName),
+      title: Text(AppLocalizations.of(context)!.translate('app_name')!),
     );
     return RefreshIndicator(
         child: Scaffold(appBar: appBar, body: _buildBodyContent()),

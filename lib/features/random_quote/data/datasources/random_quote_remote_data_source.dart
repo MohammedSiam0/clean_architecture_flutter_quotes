@@ -44,7 +44,7 @@ class RandomQuoteRemoteDataSourceImpl implements RandomQuoteRemoteDataSource {
   @override
   Future<QuoteModel> getRandomQuote() async {
     final response = await apiConsumer.get(
-      EndPoints.baseUrl,
+      EndPoints.randomQuote,
     );
     return QuoteModel.fromJson(response);
   }

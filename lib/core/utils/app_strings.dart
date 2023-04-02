@@ -7,4 +7,7 @@ class AppStrings {
   static const String cachedFailure = 'Cache Failure';
   static const String serverFailure = 'Server Failure';
   static const String unExpectedError = 'Unexpected Error';
+  static const String englishLocale = 'en';
+  static const String arabicLocale = 'ar';
+  static const String locale = 'locale';
 }

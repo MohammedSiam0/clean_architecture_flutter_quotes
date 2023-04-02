@@ -61,6 +61,8 @@ flutter:
     #  - lang/ar.json
     #  - lang/en.json
     - assets/images/ministry.png
+    - lang/ar.json
+    - lang/en.json
 
   fonts:
     - family: Tajawal
