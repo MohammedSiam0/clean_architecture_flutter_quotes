@@ -37,7 +37,7 @@ Below are two screenshots of the project's UI design:
      src="layout/project structure.png"
      alt="Alt text"
      title="Optional title"
-     width=180>
+     style="max-width: 10px;  margin-right: 10px; hight: 10px">
 
 
 </div>
@@ -49,15 +49,11 @@ src="layout/Splash Screen.jpeg"
 alt="Alt text"
 title="Optional title"
 width=180>
---------------------------------------------------------------------------------------------------------------------------------
 <img
 src="layout/Loading Data.jpeg"
 alt="Alt text"
 title="Optional title"
 width=180>
---------------------------------------------------------------------------------------------------------------------------------
-
-<div style="display: inline-block;">
 
 <img
 src="layout/Home Qoute.jpeg"
