@@ -54,7 +54,6 @@ src="layout/Loading Data.jpeg"
 alt="Alt text"
 title="Optional title"
 width=180>
-
 <img
 src="layout/Home Qoute.jpeg"
 alt="Alt text"
