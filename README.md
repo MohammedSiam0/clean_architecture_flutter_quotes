@@ -13,7 +13,7 @@ Below are two screenshots of the project's UI design:
      src="layout/CleanArchitecture.jpg"
      alt="Alt text"
      title="Optional title"
-     style="max-width: 10px; margin-right: 10px; hight: 10px">
+     style="max-width: 10px;  margin-right: 10px; hight: 10px">
  
  
 </div>
@@ -37,7 +37,7 @@ Below are two screenshots of the project's UI design:
      src="layout/project structure.png"
      alt="Alt text"
      title="Optional title"
-     style="max-width: 10px; margin-right: 10px; hight: 10px">
+     width=180>
 
 
 </div>
@@ -48,13 +48,13 @@ Below are two screenshots of the project's UI design:
 src="layout/Splash Screen.jpeg"
 alt="Alt text"
 title="Optional title"
-style="max-width: 10px; margin-right: 10px; hight: 10px">
+width=180>
 --------------------------------------------------------------------------------------------------------------------------------
 <img
 src="layout/Loading Data.jpeg"
 alt="Alt text"
 title="Optional title"
-style="max-width: 10px; margin-right: 10px; hight: 10px">
+width=180>
 --------------------------------------------------------------------------------------------------------------------------------
 
 <div style="display: inline-block;">
@@ -63,12 +63,13 @@ style="max-width: 10px; margin-right: 10px; hight: 10px">
 src="layout/Home Qoute.jpeg"
 alt="Alt text"
 title="Optional title"
-style="max-width: 10px; margin-right: 10px; hight: 10px">
+width=180>
 <img
 src="layout/Home Screen En.jpeg"
 alt="Alt text"
 title="Optional title"
-style="max-width: 10px; margin-right: 10px; hight: 10px">
+width=180
+ >
 
 </div>
 
